@@ -12,14 +12,16 @@ public class InteStrMondai1 {
 
 		// 問題2 IntegerクラスのparseIntメソッドを使用して、
 		// String型の"20"をint型に変換しましょう。
-
+		
+		tempI= Integer.parseInt("20");
 		System.out.println("問題2：" + tempI);
-
+		
 		// 問題3 IntegerクラスのparseIntメソッドを使用して、
 		// 16進数表記のFFをint型（10進数）に変換しましょう。
-
+		
+		tempI＝Integer.parseInt
 		System.out.println("問題3：" + tempI);
-
+		
 		// 問題4 StringクラスのvalueOfメソッドを使用して、
 		// int型の250をString型に変換しましょう。
 
