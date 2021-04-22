@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>好きなもの</title>
+</head>
+<body>
+	<h1>好きなもの</h1>
+	<form action="servlet/tom.MyFavorite" method ="post">
+
+		<table>
+			<tr>
+				<th>好きな食べ物：</th>
+				<td><input type="text" name="eat" value="りんご" /></td>
+			</tr>
+			<tr>
+				<th>好きな歌：</th>
+				<td><input type="text" name="song" value="りんごのうた" /></td>
+			</tr>
+			<tr>
+				<th rowspan="5">好きな言語</th>
+				<td><input type="checkbox" name="lang" value="java" />Java</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="lang" value="SQL" />SQL</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="lang" value="HTML" />HTML</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="lang" value="PHP" />PHP</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="lang" value="日本語" />日本語</td>
+			</tr>
+		</table>
+
+		<input type="submit" name="sousin" value="送信" />
+	</form>
+
+
+</body>
+</html>
