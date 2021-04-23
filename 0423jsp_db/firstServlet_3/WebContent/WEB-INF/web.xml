@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+    http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>firstServlet</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>HelloServlet</servlet-name>
+		<servlet-class>tom.HelloServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>HelloServlet</servlet-name>
+		<url-pattern>/servlet/tom.HelloServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Mondai5_1</servlet-name>
+		<servlet-class>tom.Mondai5_1</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Mondai5_1</servlet-name>
+		<url-pattern>/servlet/tom.Mondai5_1</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Mondai7_1</servlet-name>
+		<servlet-class>tom.Mondai7_1</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Mondai7_1</servlet-name>
+		<url-pattern>/servlet/tom.Mondai7_1</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Mondai7_2</servlet-name>
+		<servlet-class>tom.Mondai7_2</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Mondai7_2</servlet-name>
+		<url-pattern>/servlet/tom.Mondai7_2</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>GetSample</servlet-name>
+		<servlet-class>tom.GetSample</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>GetSample</servlet-name>
+		<url-pattern>/servlet/tom.GetSample</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>MyFavorite</servlet-name>
+		<servlet-class>tom.MyFavorite</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>MyFavorite</servlet-name>
+		<url-pattern>/servlet/tom.MyFavorite</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>JspSrvSample1</servlet-name>
+		<servlet-class>tom.JspSrvSample1</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>JspSrvSample1</servlet-name>
+		<url-pattern>/servlet/tom.JspSrvSample1</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SessionInputSample</servlet-name>
+		<servlet-class>tom.SessionInputSample</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SessionInputSample</servlet-name>
+		<url-pattern>/servlet/tom.SessionInputSample</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SessionConfSample</servlet-name>
+		<servlet-class>tom.SessionConfSample</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SessionConfSample</servlet-name>
+		<url-pattern>/servlet/tom.SessionConfSample</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Product_Mondai5</servlet-name>
+		<servlet-class>tom.Product_Mondai5</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Product_Mondai5</servlet-name>
+		<url-pattern>/servlet/tom.Product_Mondai5</url-pattern>
+	</servlet-mapping>
+
+
+
+
+
+</web-app>
