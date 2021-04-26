@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>viewSampleResult.html</title>
+  </head>
+  <body>
+    <span th:text="#{label.name}">氏名</span>は、
+    <span th:text="${viewSampleForm.name} == '' ? '未入力' : ${viewSampleForm.name}">サンプル太郎</span>です。<br>
+    <span th:text="#{label.age}">年齢</span>は、
+    <span th:text="${viewSampleForm.age} ? ${viewSampleForm.age} + '歳' : '未入力'">20歳</span>です。
+    <span th:text="${viewSampleForm.age} and ${viewSampleForm.age} >= 20 ?
+    'もう成人です。来年は、' + (${viewSampleForm.age} + 1) + '歳になります。'">もう成人です。</span><br>
+    <span th:text="${viewSampleForm.chk} == true ? '住まいは関東です。' : '住まいは関東以外です。'"></span>
+  </body>
+</html>
