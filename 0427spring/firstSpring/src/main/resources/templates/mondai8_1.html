@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>hello.html</title>
+</head>
+<body>
+	<h1>入力フォーム</h1>
+	<form th:action="@{/mondai8_1oprint}" th:object="${mondai8_1PrintForm}" method="post">
+		お名前：<input type="text" th:field="*{name}" /><br>
+		ふりがな：<input type="text" th:field="*{furigana}" /><br>
+		<input type="submit" value="送信" />
+	</form>
+</body>
+</html>
