@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>アンケート結果</title>
+</head>
+<body>
+	<h1>アンケート結果</h1>
+	<div th:object="${viewMondaiForm}">
+		<strong>お名前：</strong><span th:text="*{name}"></span><br> <strong>年齢：</strong><span
+			th:text="*{age}"></span><br>
+		<strong>海外旅行経験は？：</strong>
+		<span th:text="*{experience}"></span> <br>
+		<strong>行ってみたい国は？：</strong>
+		<span th:each="fc : *{favoriteCountry}">
+		<span th:text="${fc}"></span><br>
+		</span> <strong>備考：</strong>
+
+      	<pre><span th:utext="*{remarksText}"></span></pre>
+
+
+	</div>
+</body>
+</html>

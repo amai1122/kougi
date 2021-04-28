@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>viewSampleInput.html</title>
+  </head>
+  <body>
+    <form th:action="@{/view-sample-result}" th:object="${viewSampleForm}" method="post">
+      <span th:text="#{label.name}">氏名</span>：
+      <input type="text" th:field="*{name}" /><br>
+      <span th:text="#{label.age}">年齢</span>：
+      <input type="number" th:field="*{age}" /><br>
+
+      住まいが関東の場合はチェック：
+      <input type="checkbox" th:field="*{chk}" /><br>
+      <br>
+      <input type="submit" value="結果を表示します" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>伝言フォーム</title>
+</head>
+<body>
+	<h1>伝言フォーム</h1>
+	<form th:action="@{/controller-sample-result}"th:object="$(csForm)"method="post">
+		お名前：
+		<input type="text" th:field="*{name}" /><br>
+		伝言：
+		<textarea id ="message" name="message"></textarea><br>
+		<br>
+		<input type="submit" value="送信" />
+	</form>
+	<br>
+	<a th:href="@{/controller-sample-result?msg=固定メッセージです}">固定メッセージを送信</a>
+</body>
+</html>
