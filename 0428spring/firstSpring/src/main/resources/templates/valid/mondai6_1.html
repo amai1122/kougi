@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<meta charset="UTF-8">
+<title>Insert mondai6_1</title>
+</head>
+<body>
+<ul th:="${#fields.hasErrors('all')}">
+<h1>アンケートフォーム</h1>
+<form action="">
+	会社名：<br>
+	<input type="text" th:field="*{name}" /><br>
+	会社のURL：<br>
+	<input type="text" th:field="*{url}" /><br>
+	会社に対する満足度：
+	<input type="text" th:field="*{satis}" /><br>
+</form>
+
+</body>
+</html>

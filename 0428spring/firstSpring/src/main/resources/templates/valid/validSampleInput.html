@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}" />
+    <title>入力画面</title>
+  </head>
+  <body>
+
+    <form th:action="@{/valid-sample-conf}" th:object="${vsForm}" method="post">
+      <p th:if="${#fields.hasErrors('all')}">エラーが発生しました！</p>
+      <p th:errors="*{all}" class="error-message">error！</p>
+      お名前：
+      <input type="text" th:field="*{name}" th:errorclass="error-input" /><br>
+      年齢：
+      <input type="text" th:field="*{age}" th:errorclass="error-input" /><br>
+      メールアドレス：
+      <input type="text" th:field="*{mail}" th:errorclass="error-input" /><br>
+      <br>
+      <input type="submit" value="確認" />
+    </form>
+  </body>
+</html>
